@@ -13,7 +13,7 @@ const logger = require("./middleware/logger");
 
 const notFoundHandler = require("./error-handlers/404");
 
-const errorHandler = require("./error-handlers/500");
+// const errorHandler = require("./error-handlers/500");
 
 
 // const clothesRouter = require("./routes/clothes.route");
@@ -27,7 +27,7 @@ app.use(foodRouter);
 
 app.use(logger);
 
-app.use(errorHandler);
+// app.use(errorHandler);
 
 app.use("*", notFoundHandler);
 
